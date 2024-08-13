@@ -1,9 +1,3 @@
-/*
-* File: table.cpp
-* Author: Ton Nu Minh Trang
-* Date: 10/02/2024
-* Description: This file contains all the functions/methods to store table's information
-*/
 
 #include "../Header/table.h"
 using namespace std;

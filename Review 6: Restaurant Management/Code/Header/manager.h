@@ -1,9 +1,3 @@
-/*
-* File: manager.h
-* Author: Ton Nu Minh Trang
-* Date: 10/02/2024
-* Description: This file is a table header file that program is used for manage restaurant
-*/
 
 #ifndef _MANAGER_H
 #define _MANAGER_H

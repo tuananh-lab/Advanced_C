@@ -1,9 +1,3 @@
-/*
-* File: dish.cpp
-* Author: Ton Nu Minh Trang
-* Date: 10/02/2024
-* Description: This file contains all the functions/methods to store dish's information
-*/
 
 #include "../Header/dish.h"
 using namespace std;

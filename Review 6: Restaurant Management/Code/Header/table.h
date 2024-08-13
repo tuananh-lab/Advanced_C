@@ -1,9 +1,3 @@
-/*
-* File: table.h
-* Author: Ton Nu Minh Trang
-* Date: 10/02/2024
-* Description: This file is a table header file that program is used for storing table's information
-*/
 
 #ifndef _TABLE_H
 #define _TABLE_H
