@@ -1,16 +1,11 @@
-/*
-* File: Student.h
-* Author: Ton Nu Minh Trang
-* Date: 5/02/2024
-* Description: This file is a Student header file that program is used for storing student information
-*/
-
 #ifndef _STUDENT_H
 #define _STUDENT_H
 
 #include <iostream>
 #include <string>
 #include <list>
+#include <fstream>
+#include <limits>
 
 using namespace std;
 
@@ -36,14 +31,9 @@ private:
     string name;
     short int age;
     Gender gender;
-    short int ID;
+    char ID;
 public:
-    Person() {
-        this->name = "";
-        this->age = 0;
-        this->gender = Male;
-        this->ID = 0;
-    }
+    Person() : name(""), age(0), gender(Male), ID(0) {}
 
     ~Person() {}
 
@@ -51,13 +41,13 @@ public:
     string getName() const;
 
     void setAge(short int _age);
-    short int getAge();
+    short int getAge() const;
 
     void setGender(Gender _gender);
-    Gender getGender();
+    Gender getGender() const;
 
     void setID(short int _ID);
-    short int getID();
+    char getID() const;
 };
 
 /*
@@ -73,18 +63,12 @@ private:
     Rank rank;
 
 public:
-    Student() : Person() {
-        this->Math_score = 0;
-        this->Physic_score = 0;
-        this->Chemical_score = 0;
-        this->Average_score = 0;
-        this->rank = Excellent;
-    }
+    Student() : Person(), Math_score(0), Physic_score(0), Chemical_score(0), Average_score(0), rank(Excellent) {}
 
     ~Student() {}
 
     void setData();
-    void getData();
+    void getData() const;
 
     void setMath(float _Math_score);
     float getMath() const;
@@ -97,7 +81,7 @@ public:
 
     float getAverScore() const;
 
-    Rank getRank(); 
+    Rank getRank() const;
 };
 
 #endif

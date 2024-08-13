@@ -1,9 +1,3 @@
-/*
-* File: Menu.cpp
-* Author: Ton Nu Minh Trang
-* Date: 5/02/2024
-* Description: This file contains all of the functions/methods managing students of school
-*/
 
 #include "Menu.h"
 using namespace std;
@@ -159,7 +153,6 @@ void menu(list <Student>& database) {
 
                 case 5: // 5. Sort Student
                 {
-                sort_student:
                     cout << "\n-------------------------------------------------------------------------------------------------------" << endl;
                     cout << "------------------------------------- Student Rank Table --------------------------------------------" << endl;
 
@@ -554,7 +547,7 @@ void print_list(list <Student> database) {
 }
 
 /*
-* Function: print_list
+* Function: saveCSV
 * Description: This function is used for saving into database_sv.csv
 * Input:   database (student list)
 * Output:  return: None
